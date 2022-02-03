@@ -1,0 +1,42 @@
+html,
+body {
+  height: 100vh;
+  cursor: url("./static/imgs/pointer.svg"), pointer;
+  /* background-color: var(--theme-color); */
+  --theme-color: rgb(89, 64, 67);
+}
+
+@media screen and (max-width: 420px) {
+  html {
+    background: url("http://175.178.73.171/static/imgs/al_mobile.jpg")
+      var(--theme-color);
+    background-size: 100% auto;
+  }
+}
+
+@media screen and (min-width: 420px) {
+  html {
+    background: url("http://175.178.73.171/static/imgs/al.jpg")
+      var(--theme-color);
+    background-size: 100% auto;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+#root {
+  height: 100%;
+  background-repeat: no-repeat;
+}

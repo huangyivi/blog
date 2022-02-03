@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="http://175.178.73.171/static/icon.png"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yivi的茶座</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <!-- SVG -->
+    <svg width="0">
+      <filter id="filter">
+        <feTurbulence
+          id="turbulence"
+          type="fractalNoise"
+          baseFrequency=".01"
+          numOctaves="20"
+        />
+        <feDisplacementMap in="SourceGraphic" scale="30" />
+      </filter>
+    </svg>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

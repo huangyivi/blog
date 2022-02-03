@@ -1,0 +1,46 @@
+.poster {
+  position: relative;
+  box-shadow: 0px 0.5em 5px #000000;
+  transition: 1s ease-in;
+}
+
+.poster:hover {
+  transform: scale(1.1);
+}
+
+.loading {
+  position: relative;
+  width: 80%;
+  box-shadow: 0px 0.5em 5px #000000;
+  transition: 0.5s ease-in;
+  height: 15em;
+  background-color: #ededed;
+  background: linear-gradient(
+      100deg,
+      rgba(255, 255, 255, 0) 40%,
+      rgba(255, 255, 255, 0.8) 50%,
+      rgba(255, 255, 255, 0) 60%
+    )
+    #ededed;
+  background-position-x: 10%;
+  background-size: 200% 100%;
+  animation: 1s infinite bone;
+}
+
+@keyframes bone {
+  from {
+    background-position-x: 180%;
+  }
+  to {
+    background-position-x: -20%;
+  }
+}
+
+@media screen and (min-width: 420px) {
+  .poster {
+    width: 40%;
+  }
+  .loading {
+    width: 40%;
+  }
+}

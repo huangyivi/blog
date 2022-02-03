@@ -1,0 +1,14 @@
+.dock {
+  --scale: 1;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  user-select: none;
+  color: whitesmoke;
+  text-indent: 1em;
+}
+
+.dock span {
+  font-size: calc(3em * var(--scale));
+  transition: 500ms ease all;
+}
