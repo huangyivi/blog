@@ -1,0 +1,15 @@
+.display-main,
+.display-area {
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+
+.display-iframe {
+  display: block;
+  margin-top: 1em;
+  width: 80%;
+  height: auto;
+  box-shadow: 0px 10px 100px 0px black;
+  animation: ease skewShow 1s forwards;
+}

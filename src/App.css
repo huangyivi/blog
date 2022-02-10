@@ -20,16 +20,27 @@
   align-items: flex-start;
 }
 
-.content-area {
-  row-gap: 2em;
+.end-center {
+  justify-content: flex-end;
+  align-items: center;
 }
-@media screen and (min-width: 420px) {
-  .content-area {
-    padding: 0 4em;
-  }
+
+
+
+/* 动画 */
+.fade-enter, .fade-appear {
+  opacity: 0;
 }
-@media screen and (max-width: 420px) {
-  .content-area {
-    padding: 0 1em;
-  }
+
+.fade-enter.fade-enter-active, .fade-appear.fade-appear-active {
+  opacity: 1;
+  transition: opacity 1000ms ease-in;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit.fade-exit-active {
+  opacity: 0;
 }

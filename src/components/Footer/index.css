@@ -12,3 +12,13 @@
   font-size: calc(3em * var(--scale));
   transition: 500ms ease all;
 }
+
+.dock-item {
+  text-shadow: 0px 5px 5px black;
+}
+
+@media screen and (max-width: 420px) {
+  .dock {
+    display: none;
+  }
+}

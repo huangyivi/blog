@@ -1,0 +1,13 @@
+.content-area {
+    row-gap: 2em;
+  }
+  @media screen and (min-width: 420px) {
+    .content-area {
+      padding: 0 4em;
+    }
+  }
+  @media screen and (max-width: 420px) {
+    .content-area {
+      padding: 0 1em;
+    }
+  }

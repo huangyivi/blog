@@ -33,18 +33,11 @@ function Footer() {
     });
   }, []);
   return (
-    <div className="dock-area flex col center-center">
-      <div className="dock flex center-center">
-        <span className="dock-item">H</span>
-        <span className="dock-item">U</span>
-        <span className="dock-item">A</span>
-        <span className="dock-item">N</span>
-        <span className="dock-item">G</span>
-        <span className="dock-item">Y</span>
-        <span className="dock-item">I</span>
-        <span className="dock-item">V</span>
-        <span className="dock-item">I</span>
-      </div>
+    <div className="dock flex end-center">
+      <span className="dock-item">Y</span>
+      <span className="dock-item">I</span>
+      <span className="dock-item">V</span>
+      <span className="dock-item">I</span>
     </div>
   );
 }

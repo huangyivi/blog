@@ -1,26 +1,26 @@
-import './App.css'
-import { BrowserRouter as Router } from 'react-router-dom';
-import Header from './components/Header';
-import SideNav from './components/SideNav';
-import Poster from './components/Poster';
-import UserPanel from './components/UserPanel';
-import Music from './components/Music';
-import Footer from './components/Footer';
+import "./App.css";
+import { useLocation, useRoutes } from "react-router-dom";
+import Header from "./components/Header";
+import SideNav from "./components/SideNav";
+import { TransitionGroup, CSSTransition } from "react-transition-group";
+import Music from "./components/Music";
+import Footer from "./components/Footer";
+import routes from "./utils/routes";
 
 function App() {
+  let route = useRoutes(routes);
+  let location = useLocation()
   return (
-    <Router>
+    <>
       <Header />
-      <UserPanel />
       <SideNav />
-      <div className='content-area flex wrap around-start'>
-        {/* <Poster to="/kobe" url="http://175.178.73.171/static/imgs/kobe.jpg" /> */}
-        {/* <Poster to="/hit_it" url="http://175.178.73.171/static/imgs/allen.jpg" /> */}
-      </div>
+      <TransitionGroup>
+        <CSSTransition timeout={1000} key={location.pathname} classNames='fade' unmountOnExit={true}>{route}</CSSTransition>
+      </TransitionGroup>
       <Music />
       <Footer />
-    </Router>
-  )
+    </>
+  );
 }
 
-export default App
+export default App;
