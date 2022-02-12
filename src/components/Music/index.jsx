@@ -4,7 +4,7 @@ import playIcon from "../../static/imgs/play.svg";
 import pauseIcon from "../../static/imgs/pause.svg";
 function Music() {
   let [isPlay, setIsPlay] = useState(false);
-  let url = "http://175.178.73.171/static/music/bg.mp3";
+  let url = "http://yivi.space/static/music/bg.mp3";
   let [music, setMusic] = useState(new Audio());
   music.src = url;
   music.loop = true;

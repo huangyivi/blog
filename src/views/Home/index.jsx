@@ -6,11 +6,12 @@ function Home() {
     <>
       <UserPanel />
       <div className="content-area flex wrap around-start">
-        <Poster to="/kobe" url="http://175.178.73.171/static/imgs/kobe.jpg" />
+        <Poster to="/kobe" url="http://yivi.space/static/imgs/kobe.jpg" />
         <Poster
           to="/hit_it"
-          url="http://175.178.73.171/static/imgs/allen.jpg"
+          url="http://yivi.space/static/imgs/allen.jpg"
         />
+        <Poster to="/bingdundun" url="http://yivi.space/static/imgs/bingdundun.jfif"/>
       </div>
     </>
   );

@@ -8,7 +8,7 @@ body {
 
 @media screen and (max-width: 420px) {
   html {
-    background: url("http://175.178.73.171/static/imgs/al_mobile.jpg")
+    background: url("http://yivi.space/static/imgs/al_mobile.jpg")
       var(--theme-color);
     background-size: 100% auto;
   }
@@ -16,7 +16,7 @@ body {
 
 @media screen and (min-width: 420px) {
   html {
-    background: url("http://175.178.73.171/static/imgs/al.jpg")
+    background: url("http://yivi.space/static/imgs/al.jpg")
       var(--theme-color);
     background-size: 100% auto;
   }
