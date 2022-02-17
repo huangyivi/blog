@@ -45,8 +45,10 @@
   background-image: url("http://yivi.space/static/imgs/panda.jpg");
   background-size: cover;
   box-shadow: 0px 10px 5px black;
-  transition: 1s ease;
+  transform: rotateY(var(--skew-x));
+  transition: 0.5s ease;
 }
+
 
 .user-avatar:hover {
   transform: rotateZ(-10deg);

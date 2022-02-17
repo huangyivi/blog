@@ -4,7 +4,16 @@ body {
   cursor: url("./static/imgs/pointer.svg"), auto;
   /* background-color: var(--theme-color); */
   --theme-color: rgb(89, 64, 67);
+  --skew-x: 0deg;
+  --skew-y: 0deg;
+  /* transform: skew(var(--skew-x),var(--skew-y)); */
+  transition: all 1s ease-in-out;
 }
+
+body {
+  overflow-x: hidden;
+}
+
 
 @media screen and (max-width: 420px) {
   html {
@@ -19,6 +28,7 @@ body {
     background: url("http://yivi.space/static/imgs/al.jpg")
       var(--theme-color);
     background-size: 100% auto;
+
   }
 }
 

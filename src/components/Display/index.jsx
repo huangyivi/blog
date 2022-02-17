@@ -5,6 +5,9 @@ function Display(props) {
   let frame = useRef(null);
   useEffect(() => {
     frame.current.style.height = (frame.current.clientWidth * 9) / 16 + "px";
+    window.onresize = function () {
+      frame.current.style.height = (frame.current.clientWidth * 9) / 16 + "px";
+    };
   }, [props]);
   return (
     <div className="display-main flex col center-center">
@@ -17,7 +20,7 @@ function Display(props) {
         ></iframe>
       </div>
       <div className="user-panel flex col center-center">
-        <div>效果 ： Sliding</div>
+        <div>效果 ： {props.effect}</div>
         <div>
           指路👉 ：
           <a className="user-link" href={props.url}>
