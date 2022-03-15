@@ -1,7 +1,7 @@
 .dock {
   --scale: 1;
   position: fixed;
-  bottom: 0;
+  top: 0;
   width: 100%;
   user-select: none;
   color: whitesmoke;
