@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import "./index.css";
 
-function Footer() {
+function Title() {
   useEffect(() => {
     const spans = document.querySelectorAll(".dock-item");
     const reset = function () {
@@ -12,20 +12,20 @@ function Footer() {
     spans.forEach((span) => {
       span.addEventListener("mouseover", function (e) {
         let item = e.target;
-        let itemRect = item.getBoundingClientRect();
-        let offset = Math.abs(e.clientX - itemRect.left) / itemRect.width;
-        let prev = item.previousElementSibling || null;
-        let next = item.nextElementSilbling || null;
+        // let itemRect = item.getBoundingClientRect();
+        // let offset = Math.abs(e.clientX - itemRect.left) / itemRect.width;
+        // let prev = item.previousElementSibling || null;
+        // let next = item.nextElementSilbling || null;
 
-        let baseScale = 0.6;
+        let baseScale = 0.1;
         reset();
-        if (prev) {
-          prev.style.setProperty("--scale", 1 + Math.abs(1 - offset));
-        }
+        // if (prev) {
+        //   prev.style.setProperty("--scale", 1 + Math.abs(0.2 - offset));
+        // }
         item.style.setProperty("--scale", 1 + baseScale);
-        if (next) {
-          next.style.setProperty("--scale", 1 + offset);
-        }
+        // if (next) {
+        //   next.style.setProperty("--scale", 1 + offset*baseScale);
+        // }
       });
     });
     document.querySelector(".dock").addEventListener("mouseleave", function () {
@@ -33,7 +33,7 @@ function Footer() {
     });
   }, []);
   return (
-    <div className="dock flex end-center">
+    <div className="dock flex center-center">
       <span className="dock-item">Y</span>
       <span className="dock-item">I</span>
       <span className="dock-item">V</span>
@@ -42,4 +42,4 @@ function Footer() {
   );
 }
 
-export default Footer;
+export default Title;

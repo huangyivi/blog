@@ -15,6 +15,14 @@
   justify-content: center;
   align-items: center;
 }
+.between-center {
+  justify-content: space-between;
+  align-items: center;
+}
+.start-center {
+  justify-content: flex-start;
+  align-items: center;
+}
 .around-start {
   justify-content: space-around;
   align-items: flex-start;

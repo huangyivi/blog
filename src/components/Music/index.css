@@ -25,7 +25,7 @@
 
 @media screen and (min-width: 420px) {
     .music-box {
-        top: 4em;
+        bottom: 4em;
     }
 }
 

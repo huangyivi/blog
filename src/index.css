@@ -3,7 +3,6 @@ body {
   height: 100vh;
   cursor: url("./static/imgs/pointer.svg"), auto;
   /* background-color: var(--theme-color); */
-  --theme-color: rgb(89, 64, 67);
   --skew-x: 0deg;
   --skew-y: 0deg;
   /* transform: skew(var(--skew-x),var(--skew-y)); */
@@ -14,21 +13,20 @@ body {
   overflow-x: hidden;
 }
 
-
 @media screen and (max-width: 420px) {
   html {
+    --theme-color: rgb(4, 86, 120);
     background: url("http://yivi.space/static/imgs/al_mobile.jpg")
-      var(--theme-color);
+      var(--theme-color) no-repeat;
     background-size: 100% auto;
   }
 }
 
 @media screen and (min-width: 420px) {
   html {
-    background: url("http://yivi.space/static/imgs/al.jpg")
-      var(--theme-color);
+    --theme-color: rgb(89, 64, 67);
+    background: url("http://yivi.space/static/imgs/al.jpg") var(--theme-color) no-repeat;
     background-size: 100% auto;
-
   }
 }
 

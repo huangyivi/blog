@@ -1,0 +1,10 @@
+.convert-main {
+    height: 100%;
+}
+
+.convert-panel {
+    width: 80%;
+    height: 80%;
+    background-color: #fff;
+    box-shadow: 1px 1px 1px black;
+}

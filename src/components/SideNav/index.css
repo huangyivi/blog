@@ -26,11 +26,10 @@
 
 @media screen and (min-width: 420px) {
   .side {
-    flex-direction: column;
-    position: fixed;
+    position: absolute;
     width: auto;
-    left: 2em;
-    top: 8em;
+    right: 2em;
+    top: 2em;
   }
   .nav-item {
     padding: 0 10px;

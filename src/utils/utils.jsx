@@ -1,21 +1,19 @@
 export function throttle(func, timeout) {
-  let timer = null;
+  let start = Date.now();
   return function (...args) {
-    if (timer) return;
-    timer = setTimeout(() => {
+    if (Date.now() - start >= timeout) {
       func(...args);
-      timer = null;
-    }, timeout);
+      start = Date.now();
+    } 
   };
 }
 
-
-export function debounce(func,timeout) {
-    let timer = null;
-    return function(...args) {
-        clearTimeout(timer);
-        timer = setTimeout(() => {
-            func(...args);
-        }, timeout);
-    }
+export function debounce(func, timeout) {
+  let timer = null;
+  return function (...args) {
+    clearTimeout(timer);
+    timer = setTimeout(() => {
+      func(...args);
+    }, timeout);
+  };
 }

@@ -1,6 +1,7 @@
 import React from 'react';
-import Display from "../components/Display";
+import Display from "../views/Display";
 import Home from "../views/Home";
+import Convert from "../views/Convert"
 
 const routes = [
     {
@@ -22,6 +23,11 @@ const routes = [
         path:'/display/bingdundun',
         name: "冰墩墩",
         element: <Display url='http://yivi.space/bingdundun' effect='CSS' intro='通过CSS3实现的冰墩墩'/>
+    }
+    ,{
+        path:'/convert',
+        name: "格式转换",
+        element: <Convert/>
     }
 ]
 
