@@ -3,7 +3,6 @@ import { useLocation, useRoutes } from "react-router-dom";
 import Header from "./components/Header";
 import SideNav from "./components/SideNav";
 import Music from "./components/Music";
-import Footer from "./components/Title";
 import routes from "./utils/routes";
 import { useEffect } from "react";
 import { throttle } from "./utils/utils";
@@ -30,7 +29,6 @@ function App() {
   return (
     <>
       <Header />
-      <Footer />
       <SideNav />
       {route}
       <Music />
