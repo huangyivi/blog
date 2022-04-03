@@ -1,10 +1,87 @@
 .convert-main {
-    height: 100%;
+  height: 100%;
+}
+
+.convert-container {
+  width: 80%;
+  height: 80%;
+  background-color: #fff;
+  box-shadow: 5px 5px 5px black;
 }
 
 .convert-panel {
-    width: 80%;
-    height: 80%;
-    background-color: #fff;
-    box-shadow: 1px 1px 1px black;
+  height: 80%;
+  width: 80%;
+}
+
+.convert-list {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  overflow-y: scroll;
+}
+
+.convert-list > li {
+  display: grid;
+  place-content: center;
+  margin: 5px;
+  list-style: none;
+  width: 90%;
+  height: 5em;
+  box-shadow: 1px 1px 5px black;
+}
+
+.convert-option {
+  color: #fff;
+  width: 100%;
+  height: 8em;
+  background-color: rgb(50, 50, 50);
+}
+.convert-btn {
+  width: 15rem;
+  height: 100%;
+  font-weight: 600;
+  cursor: pointer;
+}
+.convert-download {
+  background-color: rgb(255, 51, 51);
+}
+.convert-upload {
+  background-color: rgb(37, 190, 37);
+}
+.convert-btn:hover {
+  opacity: 0.8;
+}
+
+.convert-progress {
+  position: relative;
+  width: 80%;
+  height: 100%;
+  background-image: linear-gradient(to bottom,rgb(43,182,210),rgb(86,206,177));
+  background-size: 100% 200%;
+  background-repeat: no-repeat;
+  transition: background-image 0.5s ease-out;
+  animation: 2s linear wave infinite;
+}
+@keyframes wave {
+    0% {
+        background-position-y: 0;
+    }
+    50% {
+        background-position-y: 100%;
+    }
+    100% {
+        background-position-y: 0%;
+    }
+}
+
+.convert-progress::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgb(50, 50, 50);
+  z-index: -1;
 }
